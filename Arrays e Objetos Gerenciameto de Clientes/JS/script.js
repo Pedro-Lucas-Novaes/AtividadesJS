@@ -1,4 +1,8 @@
 // Array listaClientes
+function spanDestaque(texto) {
+  return `<span class="destaque">${texto}</span>`;
+}
+
 const listaClientes = [
   {
     nome: "Pedro Lucas",
@@ -21,11 +25,11 @@ const listaClientes = [
 // fun listaClientes forEach
 function exibirLista() {
   listaClientes.forEach((Cliente) => {
-    document.write(`
-        Nome: ${Cliente.nome}<br>
-        Endereço: ${Cliente.endereco}<br>
-        CPF: ${Cliente.cpf}<br><br>
-        `);
+    document.write(`<p>
+        Nome: ${spanDestaque(Cliente.nome)}<br><br>
+        Endereço: ${spanDestaque(Cliente.endereco)}<br><br>
+        CPF: ${spanDestaque(Cliente.cpf)}<br><br>
+       </p>`);
   });
 }
 // Fim fun listaClientes forEach

@@ -1,0 +1,16 @@
+body{
+    background-color: #90f090;
+}
+p{
+    font-size: x-large;
+    text-align: center;
+    margin-top: 50px;
+    font-weight: bolder;
+}
+
+.destaque {
+  background-color: #f7b451;
+  color: #1959e4;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
