@@ -21,15 +21,15 @@ button{
     transition: all 0.4s ease-in-out;
     border-radius: 10%;
     font-size: 15px;
-}
-span{
-    display: none;
+    width: 90px;
+    height: 40px;
 }
 
 #claro:hover{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     transform: scale(1.05);
     border-radius: 5%;    
+    color: rgb(255, 222, 35);
 }
 
 
@@ -43,3 +43,12 @@ span{
     background-color: black;
     transform: scale(1.05);
 }
+
+#sol{
+    display: none;
+}
+
+#lua{
+    display: none;
+}
+
