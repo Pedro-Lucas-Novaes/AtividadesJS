@@ -25,6 +25,20 @@ button{
     height: 40px;
 }
 
+p{
+    font-size: x-large;
+    text-align: center  ;
+    margin-top: 50px;
+    font-weight: bolder;
+    line-height: 2rem;
+    margin-top: 40px;
+}
+
+.title{
+    position: absolute;
+    top: 275px;
+}
+
 #claro:hover{
     background-color: rgb(255, 255, 255);
     transform: scale(1.05);

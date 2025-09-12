@@ -1,13 +1,19 @@
 function claro() {
   document.querySelector(".container").style.backgroundColor = "white";
+  document.querySelector(".title").style.color = "black";
+  document.querySelector(".title").textContent = "Bom Dia 🌞";
 }
 
 function reset() {
   document.querySelector(".container").style.backgroundColor = "lightgray";
+  document.querySelector(".title").style.color = "black";
+  document.querySelector(".title").textContent = "Boa Tarde 🌻";
 }
 
 function escuro() {
   document.querySelector(".container").style.backgroundColor = "black";
+  document.querySelector(".title").style.color = "white";
+  document.querySelector(".title").textContent = "Boa Noite 😴";
 }
 
 document.querySelector("#claro").addEventListener("mouseenter", () => {

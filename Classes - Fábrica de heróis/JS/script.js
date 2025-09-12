@@ -82,7 +82,7 @@ document.write(
     Chega velocidade máxima de ${spanDestaque(BatMan.velocidade)} por hora<br>
      Possui ${spanDestaque(BatMan.forca)} pontos de força<br>
       No momento ${spanDestaque(BatMan.andar())}<br>
-       ${spanDestaque(BatMan.furtividade ? "Batman está entre as sombras" : "Ele está aqui...")}</p>`
+       ${spanDestaque(BatMan.furtividade ? "Batman está entre as sombras" : "Fuja...")}</p>`
 );
 
 document.write(`<p>${spanDestaque(homemAranha.sentidoAranha())}</p>`);
