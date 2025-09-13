@@ -1,5 +1,11 @@
 body{
     background-color: #f0bc2e;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;     
+    height: 80vh;
+    margin: 0;
 }
 
 p{
@@ -8,7 +14,6 @@ p{
     margin-top: 50px;
     font-weight: bolder;
     line-height: 2rem;
-    margin-top: 40px;
 }
 
 .destaque {
@@ -16,8 +21,11 @@ p{
   color: #ffffff; 
   padding: 2px 4px;
   border-radius: 4px;
-  transition: all 0.4 ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  display: inline-block; 
+  transform-origin: center;
 }
 
-
-
+.destaque:hover {
+  transform: scale(1.5);
+}
