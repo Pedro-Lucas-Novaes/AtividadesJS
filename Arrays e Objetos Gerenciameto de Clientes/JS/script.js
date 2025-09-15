@@ -1,4 +1,3 @@
-// Array listaClientes
 function spanDestaque(texto) {
   return `<span class="destaque">${texto}</span>`;
 }
@@ -20,9 +19,7 @@ const listaClientes = [
     cpf: 59515154575,
   },
 ];
-// Fim Array listaClientes
 
-// fun listaClientes forEach
 function exibirLista() {
   listaClientes.forEach((Cliente) => {
     document.write(`<p>
@@ -32,22 +29,18 @@ function exibirLista() {
        </p>`);
   });
 }
-// Fim fun listaClientes forEach
 
-// Adicionando Cliente/Objeto no final da lista
 listaClientes.push({
   nome: "Paulo Beti",
   endereco: "Rua José Camargo 566",
   cpf: 37610438655,
 });
-// Fim Adicionando Cliente/Objeto no final da lista
 
-// Adicionando Cliente/Objeto no Início da lista
 listaClientes.unshift({
   nome: "Roberto Sousa",
   endereco: "Rua Calamardo 6",
   cpf: 376454345655,
 });
-// Fim Adicionando Cliente/Objeto no Início da lista
 
 exibirLista();
+
