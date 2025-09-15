@@ -2,8 +2,6 @@ function spanDestaque(texto) {
   return `<span class="destaque">${texto}</span>`;
 } 
 
-// Saudação
-
   function escapeHTML(str) {
   return str.replace(/[&<>"']/g, c => 
     ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c])
@@ -21,9 +19,7 @@ function saudacaoPersonalizada() {
 }
 
 saudacaoPersonalizada();
-    // Fim Saudação
 
-    // Cálculo
     function promptNumero(mensagem, tenteNovamente) {
       let msg = mensagem;
       while (true) {
@@ -82,25 +78,18 @@ saudacaoPersonalizada();
     const num2 = promptNumero("Digite o segundo número:", "Número inválido! Digite novamente:");
 
     operacaoMatematica(num1, operador, num2);
-    // Fim Cálculo
 
-    // Dobro
     const calcularDobro = function (num1) {
       return num1 * 2;
     };
 
     const n1 = promptNumero("Digite o número que deseja dobrar:", "Número inválido! Digite novamente:");
     document.write(`<p>O dobro de ${n1} é: ${spanDestaque(calcularDobro(n1))}</p>`);
-    // Fim Dobro
 
-    // Metade
     const calcularMetade = (num1) => num1 / 2;
     const nu1 = promptNumero("Digite o número que deseja descobrir a metade:", "Número inválido! Digite novamente:");
     document.write(`<p>A metade de ${nu1} é: ${spanDestaque(calcularMetade(nu1))}</p>`);
-    // Fim Metade
 
-    // IIFE
     (() => {
       document.write("<h1 class='texto'>Calculadora Universal pronta para uso!</h1>");
     })();
-    // Fim IIFE
