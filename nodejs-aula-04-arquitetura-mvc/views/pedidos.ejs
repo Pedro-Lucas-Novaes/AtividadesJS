@@ -1,0 +1,29 @@
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/navbar.ejs') %>
+
+    <table class="table table-bordered table-hover">
+        <thead class="table-dark">
+            <tr>
+                <th>Numero:</th>
+                <th>Produto:</th>
+                <th>Valor do ped:</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- FOREACH -->
+             <% pedidos.forEach(pedido => { %>
+                <tr>
+                    <td><%= pedido.numero %></td>
+                    <td><%= pedido.produto %></td>
+                    <td><%= pedido.valorDoPedido %></td>
+                </tr>
+            <% }) %>
+        </tbody>
+    </table>
+
+
+    <ul>
+        <li><a href="/">Voltar</a></li>
+    </ul>
+
+<%- include ('partials/footer.ejs') %>
