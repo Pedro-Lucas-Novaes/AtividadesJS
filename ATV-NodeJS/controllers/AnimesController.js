@@ -8,11 +8,11 @@ router.get("/animes", (req, res) => {
 
   // Array de objetos com os produtos
   const animes = [
-    { nome: "Platano", preco: 3000, img: "/imgs/imagem1.png"},
-    { nome: "Computador", preco: 4000, img: "/imgs/imagem1.png" },
-    { nome: "Tablet", preco: 2000, img: "/imgs/imagem1.png" },
-    { nome: "Notebook", preco: 3000, img: "/imgs/imagem1.png" },
-    { nome: "Notebook", preco: 3000, img: "/imgs/imagem1.png" },
+    { nome: "Jujutsu Kaisen", preco: 3000, img: "/imgs/imgA001.png"},
+    { nome: "The Promised Nerverland", preco: 4000, img: "/imgs/imgA002.png" },
+    { nome: "Boku no Hero", preco: 2000, img: "/imgs/imgA003.png" },
+    { nome: "Sakamoto Days", preco: 3000, img: "/imgs/imgA004.png" },
+    { nome: "Chainsaw Man", preco: 3000, img: "/imgs/imgA005.png" },
   ];
 
   res.render("animes", {

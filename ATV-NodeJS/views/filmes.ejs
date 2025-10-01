@@ -1,29 +1,15 @@
 <%- include ('partials/header.ejs') %>
 <%- include ('partials/navbar.ejs') %>
 
-<h1>Bem-vindo a página Clientes</h1>
-    <hr>
-    <h3>Lista de clientes</h3>
-    <table class="table table-bordered table-hover">
-        <thead class="table-dark">
-            <tr>
-                <th>Nome:</th>
-                <th>CPF:</th>
-                <th>Endereço:</th>
-            </tr>
-        </thead>
-        <tbody>
             <!-- FOREACH -->
              <% filmes.forEach(filme => { %>
-                <tr>
-                    <td><%= filme.nome %></td>
-                    <td><%= filme.cpf %></td>
-                    <td><%= filme.endereco %></td>
+                <ul>
+                    <li><%= filme.nome %></li>
+                    <li><%= filme.cpf %></li>
                     <img src="<%= filme.img %>" alt="<%= filme.nome %>">
-                </tr>
+                    <li><%= filme.endereco %></li>
+                </ul>
             <% }) %>
-        </tbody>
-    </table>
 
     <ul>
         <li><a href="/">Voltar</a></li>

@@ -10,9 +10,9 @@
      <ul>
         <% animes.forEach(anime => { %>
             <li> <%= anime.nome %> </li>
+            <img src="<%= anime.img %>" alt="<%= anime.nome %>">
             <li> <%= anime.preco.toLocaleString("pt-br",
              {style: "currency", currency: "BRL"}) %> </li>
-             <img src="<%= anime.img %>" alt="<%= anime.nome %>">
             <br>
         <% }) %>
      </ul>

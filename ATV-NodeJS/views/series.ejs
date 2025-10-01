@@ -1,26 +1,18 @@
 <%- include ('partials/header.ejs') %>
 <%- include ('partials/navbar.ejs') %>
 
-    <table class="table table-bordered table-hover">
-        <thead class="table-dark">
-            <tr>
-                <th>Numero:</th>
-                <th>Produto:</th>
-                <th>Valor do ped:</th>
-            </tr>
-        </thead>
-        <tbody>
+    
             <!-- FOREACH -->
              <% series.forEach(serie => { %>
-                <tr>
-                    <td><%= serie.numero %></td>
-                    <td><%= serie.produto %></td>
-                    <td><%= serie.valorDoPedido %></td>
+                <ul>
+                    <li><%= serie.nome %></li>
+                    <li><%= serie.produto %></li>
                     <img src="<%= serie.img %>" alt="<%= serie.nome %>">
-                </tr>
+                    <li><%= serie.valorDoPedido %></li>
+                </ul>
             <% }) %>
-        </tbody>
-    </table>
+        
+    
 
 
     <ul>

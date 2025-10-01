@@ -2,9 +2,48 @@
     color: darkgreen;
     margin: 6px;
 }
+
+.anime{
+    display: flex;
+    align-items: center;
+    
+}
+
+.filme{
+    display: flex;
+    align-items: center;
+}
+
+.serie{
+    display: flex;
+    align-items: center;
+}
+
 img{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100px;
 }
+
+.navbar-netflix {
+      background-color: #161616; 
+    }
+
+    /* Texto "Netflix" */
+    .navbar-netflix .navbar-brand {
+      color: #e50914; 
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+
+    /* Links */
+    .navbar-netflix .nav-link {
+      color: #ffffff !important; 
+      font-weight: 500;
+    }
+
+    /* Hover dos links */
+    .navbar-netflix .nav-link:hover {
+      color: #b3b3b3 !important; 
+    }
