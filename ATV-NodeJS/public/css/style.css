@@ -1,5 +1,5 @@
 *{
-    color: darkgreen;
+    color: rgb(255, 255, 255);
     margin: 6px;
 }
 
@@ -30,20 +30,38 @@ img{
       background-color: #161616; 
     }
 
-    /* Texto "Netflix" */
+    
     .navbar-netflix .navbar-brand {
       color: #e50914; 
       font-weight: bold;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
+      transition: ease-in-out 0.5s;
     }
 
-    /* Links */
+    
     .navbar-netflix .nav-link {
       color: #ffffff !important; 
       font-weight: 500;
+      transition: ease-in-out 0.5s;
     }
 
-    /* Hover dos links */
+    
     .navbar-netflix .nav-link:hover {
       color: #b3b3b3 !important; 
+      transform: scale(1.2);
+      
+    }
+
+    .navbar-netflix .navbar-brand:hover {
+      transform: scale(1.5);
+      color: #e50914;
+      
+    }
+
+    .teste{
+      transition: ease-in-out 0.4s;
+    }
+
+    .teste:hover{
+      transform: scale(1.5);
     }
