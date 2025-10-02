@@ -1,20 +1,20 @@
 *{
     color: rgb(255, 255, 255);
-    margin: 6px;
+    margin: 0px;
 }
 
-.anime{
+#anime{
     display: flex;
     align-items: center;
     
 }
 
-.filme{
+#filme{
     display: flex;
     align-items: center;
 }
 
-.serie{
+#serie{
     display: flex;
     align-items: center;
 }
@@ -27,8 +27,8 @@ img{
 }
 
 .navbar-netflix {
-      background-color: #161616; 
-    }
+  background-color: #000000; 
+}
 
     
     .navbar-netflix .navbar-brand {
@@ -58,10 +58,20 @@ img{
       
     }
 
-    .teste{
+    .capa{
       transition: ease-in-out 0.4s;
     }
 
-    .teste:hover{
-      transform: scale(1.5);
+    .capa:hover{
+      transform: scale(1.2);
     }
+#anime, #filme, #serie {
+  margin-top: 30px; 
+}
+
+.capa {
+  width: 150px;
+  margin: 15px 40px; 
+  border-radius: 5px;
+}
+
