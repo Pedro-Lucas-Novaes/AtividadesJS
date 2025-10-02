@@ -9,17 +9,18 @@
     <!-- Percorrendo a lista de produtos com forEach-->
      <ul>
         <% animes.forEach(anime => { %>
-            <li> <%= anime.nome %> </li>
-            <img src="<%= anime.img %>" alt="<%= anime.nome %>">
-            <li> <%= anime.preco.toLocaleString("pt-br",
-             {style: "currency", currency: "BRL"}) %> </li>
+          <h4>  <li> <%= anime.nome %> </li> </h4>
+          <br>
+            <img class="capa" src="<%= anime.img %>" alt="<%= anime.nome %>">
+            <br>
+           <h4> <li> <%= anime.preco.toLocaleString("pt-br",
+             {style: "currency", currency: "BRL"}) %> </li> </h4>
+             <hr>
             <br>
         <% }) %>
      </ul>
 
-    <br><br>
-    <ul>
-        <li><a href="/">Voltar</a></li>
-    </ul>
+    
+    
 
 <%- include ('partials/footer.ejs') %>

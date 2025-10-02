@@ -1,18 +1,25 @@
 <%- include ('partials/header.ejs') %>
 <%- include ('partials/navbar.ejs') %>
 
+
+<h1>Bem-vindo a página filmes!</h1>
+    <hr>
+    <h2>Lista de animes:</h2>
+
             <!-- FOREACH -->
              <% filmes.forEach(filme => { %>
                 <ul>
-                    <li><%= filme.nome %></li>
-                    <li><%= filme.cpf %></li>
-                    <img src="<%= filme.img %>" alt="<%= filme.nome %>">
-                    <li><%= filme.endereco %></li>
+                  <h4>  <li><%= filme.nome %></li> </h4>
+                  <br>
+                 <h4>  <li><%= filme.cpf %></li> </h4>
+                 <br>
+                    <img class="capa" src="<%= filme.img %>" alt="<%= filme.nome %>">
+                    <br>
+                  <h4>  <li><%= filme.endereco %></li> </h4>
+                  <br>
                 </ul>
             <% }) %>
 
-    <ul>
-        <li><a href="/">Voltar</a></li>
-    </ul>
+    
 
 <%- include ('partials/footer.ejs') %>

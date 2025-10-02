@@ -1,22 +1,28 @@
 <%- include ('partials/header.ejs') %>
 <%- include ('partials/navbar.ejs') %>
 
+
+<h1>Bem-vindo a página séries!</h1>
+    <hr>
+    <h2>Lista de animes:</h2>
     
             <!-- FOREACH -->
              <% series.forEach(serie => { %>
                 <ul>
-                    <li><%= serie.nome %></li>
-                    <li><%= serie.produto %></li>
-                    <img src="<%= serie.img %>" alt="<%= serie.nome %>">
-                    <li><%= serie.valorDoPedido %></li>
+                  <h4>  <li><%= serie.nome %></li> </h4>
+                  <br>
+                   <h4> <li><%= serie.produto %></li> </h4>
+                   <br>
+                    <img class="capa" src="<%= serie.img %>" alt="<%= serie.nome %>">
+                    <br>
+                  <h4>  <li><%= serie.valorDoPedido %></li> </h4>
+                  <br>
                 </ul>
             <% }) %>
         
     
 
 
-    <ul>
-        <li><a href="/">Voltar</a></li>
-    </ul>
+   
 
 <%- include ('partials/footer.ejs') %>

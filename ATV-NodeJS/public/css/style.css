@@ -2,6 +2,9 @@
     color: rgb(255, 255, 255);
     margin: 0px;
 }
+h3, h4{
+  margin: 25px;
+}
 
 #anime{
     display: flex;
@@ -53,7 +56,7 @@ img{
     }
 
     .navbar-netflix .navbar-brand:hover {
-      transform: scale(1.5);
+      transform: scale(1.2);
       color: #e50914;
       
     }
@@ -65,6 +68,7 @@ img{
     .capa:hover{
       transform: scale(1.2);
     }
+
 #anime, #filme, #serie {
   margin-top: 30px; 
 }
