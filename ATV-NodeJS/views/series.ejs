@@ -1,28 +1,22 @@
-<%- include ('partials/header.ejs') %>
-<%- include ('partials/navbar.ejs') %>
-
+<%- include ('partials/header.ejs') %> <%- include ('partials/navbar.ejs') %>
 
 <h1>Bem-vindo a página séries!</h1>
-    <hr>
-    <h2>Lista de animes:</h2>
-    
-            <!-- FOREACH -->
-             <% series.forEach(serie => { %>
-                <ul>
-                  <h4>  <li><%= serie.nome %></li> </h4>
-                  <br>
-                   <h4> <li><%= serie.produto %></li> </h4>
-                   <br>
-                    <img class="capa" src="<%= serie.img %>" alt="<%= serie.nome %>">
-                    <br>
-                  <h4>  <li><%= serie.valorDoPedido %></li> </h4>
-                  <br>
-                </ul>
-            <% }) %>
-        
-    
+<hr />
+<h2>Lista de animes:</h2>
 
-
-   
-
-<%- include ('partials/footer.ejs') %>
+<!-- FOREACH -->
+<% series.forEach(serie => { %>
+<ul>
+  <h4><li><%= serie.nome %></li></h4>
+  <br />
+  <img class="capa" src="<%= serie.img %>" alt="<%= serie.nome %>" />
+  <br />
+  <h4>
+    <li>
+      <%= serie.preco.toLocaleString("pt-br", {style: "currency", currency:
+      "BRL"}) %>
+    </li>
+  </h4>
+  <hr />
+</ul>
+<% }) %> <%- include ('partials/footer.ejs') %>

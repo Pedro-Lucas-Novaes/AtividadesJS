@@ -1,25 +1,23 @@
-<%- include ('partials/header.ejs') %>
-<%- include ('partials/navbar.ejs') %>
-
+<%- include ('partials/header.ejs') %> <%- include ('partials/navbar.ejs') %>
 
 <h1>Bem-vindo a página filmes!</h1>
-    <hr>
-    <h2>Lista de animes:</h2>
+<hr />
+<h2>Lista de animes:</h2>
 
-            <!-- FOREACH -->
-             <% filmes.forEach(filme => { %>
-                <ul>
-                  <h4>  <li><%= filme.nome %></li> </h4>
-                  <br>
-                 <h4>  <li><%= filme.cpf %></li> </h4>
-                 <br>
-                    <img class="capa" src="<%= filme.img %>" alt="<%= filme.nome %>">
-                    <br>
-                  <h4>  <li><%= filme.endereco %></li> </h4>
-                  <br>
-                </ul>
-            <% }) %>
-
-    
-
-<%- include ('partials/footer.ejs') %>
+<!-- FOREACH -->
+<% filmes.forEach(filme => { %>
+<ul>
+  <h4><li><%= filme.nome %></li></h4>
+  <br />
+  <img class="capa" src="<%= filme.img %>" alt="<%= filme.nome %>" />
+  <br />
+  <h4>
+    <li>
+      <%= filme.preco.toLocaleString("pt-br", {style: "currency", currency:
+      "BRL"}) %>
+      <hr />
+    </li>
+  </h4>
+  <br />
+</ul>
+<% }) %> <%- include ('partials/footer.ejs') %>
