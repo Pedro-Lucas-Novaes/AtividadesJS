@@ -2,7 +2,6 @@ import express from "express";
 
 const router = express.Router();
 
-// ROTA DE PEDIDOS
 router.get("/series", (req, res) => {
   const series = [
     {

@@ -1,26 +1,25 @@
-<%- include ('partials/header.ejs') %>
-<%- include ('partials/navbar.ejs') %>
+<%- include ('partials/header.ejs') %> <%- include ('partials/navbar.ejs') %>
 
-    <h1>Bem-vindo a página animes!</h1>
-    <hr>
-    <h2>Lista de animes:</h2>
-    <%#= animes %>
+<h1>Bem-vindo a página animes!</h1>
+<hr />
+<h2>Lista de animes:</h2>
+<%#= animes %>
 
-    <!-- Percorrendo a lista de produtos com forEach-->
-     <ul>
-        <% animes.forEach(anime => { %>
-          <h4>  <li> <%= anime.nome %> </li> </h4>
-          <br>
-            <img class="capa" src="<%= anime.img %>" alt="<%= anime.nome %>">
-            <br>
-           <h4> <li> <%= anime.preco.toLocaleString("pt-br",
-             {style: "currency", currency: "BRL"}) %> </li> </h4>
-             <hr>
-            <br>
-        <% }) %>
-     </ul>
-
-    
-    
+<ul>
+  <% animes.forEach(anime => { %>
+  <h4><li><%= anime.nome %></li></h4>
+  <br />
+  <img class="capa" src="<%= anime.img %>" alt="<%= anime.nome %>" />
+  <br />
+  <h4>
+    <li>
+      <%= anime.preco.toLocaleString("pt-br", {style: "currency", currency:
+      "BRL"}) %>
+    </li>
+  </h4>
+  <hr />
+  <br />
+  <% }) %>
+</ul>
 
 <%- include ('partials/footer.ejs') %>

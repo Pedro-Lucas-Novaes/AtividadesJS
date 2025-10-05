@@ -1,9 +1,7 @@
-// Importando o Express
 import express from "express";
-// Carregando na variável router o express.Router() que é responsavel por gerenciar as rotas da aplicação
+
 const router = express.Router();
 
-// ROTA DE CLIENTES
 router.get("/filmes", (req, res) => {
   const filmes = [
     {
@@ -37,5 +35,4 @@ router.get("/filmes", (req, res) => {
   });
 });
 
-// Exportando o objeto router
 export default router;
