@@ -1,0 +1,31 @@
+<%- include ('partials/header.ejs') %> <%- include ('partials/navbar.ejs') %>
+
+<h1>Bem-vindo a página favoritos!</h1>
+<hr />
+<h2>Lista de favoritos:</h2>
+
+<table>
+      <thead>
+        <th style="width: 150px; text-align: left">Título</th>
+        <th style="width: 150px; text-align: left">Gênero</th>
+        <th style="width: 150px; text-align: left">Preço</th>
+        <th style="width: 150px; text-align: left">Ações</th>
+      </thead>
+      <tbody>
+        <% favoritos.forEach(favorito => { %>
+        <tr>
+          <td><%= favorito.titulo %></td>
+          <td><%= favorito.genero %></td>
+          <td><%= favorito.preco %></td>
+
+          <td>
+            <a href="/favoritos/delete/<%= favorito.id %>">
+                <button onclick="return confirm('Deseja mesmo excluir o filme <%= favorito.titulo %>?')">Excluir</button>
+            </a>
+        </td>
+        </tr>
+        <% }) %>
+      </tbody>
+    </table>
+
+<%- include ('partials/footer.ejs') %>

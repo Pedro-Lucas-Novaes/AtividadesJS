@@ -2,7 +2,7 @@ import express from "express";
 
 const app = express();
 
-import Auth from "./middleware/Auth.js"
+import Auth from "./middleware/Auth.js";
 
 import session from "express-session";
 
@@ -11,7 +11,7 @@ import connection from "./config/sequelize-config.js";
 import FilmesController from "./controllers/FilmesController.js";
 import SeriesController from "./controllers/SeriesController.js";
 import AnimesController from "./controllers/AnimesController.js";
-
+import FavoritosController from "./controllers/FavoritosController.js";
 
 // Realizando a conexão com o banco de dados
 connection
@@ -37,9 +37,12 @@ app.set("view engine", "ejs");
 
 app.use(express.static("public"));
 
+app.use(express.urlencoded({ extended: false }));
+
 app.use("/", FilmesController);
 app.use("/", SeriesController);
 app.use("/", AnimesController);
+app.use("/", FavoritosController);
 
 app.get("/", (req, res) => {
   res.render("index");
