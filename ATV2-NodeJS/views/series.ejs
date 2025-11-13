@@ -1,0 +1,26 @@
+<%- include ('partials/header.ejs') %> <%- include ('partials/navbar.ejs') %>
+
+<h1>Bem-vindo a página séries!</h1>
+<hr />
+<h2>Lista de animes:</h2>
+
+<% series.forEach(serie => { %>
+<ul>
+  <h4><li><%= serie.nome %></li></h4>
+  <br />
+  <img class="capa" src="<%= serie.img %>" alt="<%= serie.nome %>" />
+  <td class="text-center" style="max-width: 30px;">
+    <a href="/">
+    <button class="btn btn-success">Comprar</button>
+     </a>
+  </td>
+  <br />
+  <h4>
+    <li>
+      <%= serie.preco.toLocaleString("pt-br", {style: "currency", currency:
+      "BRL"}) %>
+    </li>
+  </h4>
+  <hr />
+</ul>
+<% }) %> <%- include ('partials/footer.ejs') %>

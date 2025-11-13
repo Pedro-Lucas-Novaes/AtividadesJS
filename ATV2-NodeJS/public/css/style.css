@@ -1,0 +1,79 @@
+* {
+  color: rgb(255, 255, 255);
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h3,
+h4 {
+  margin: 25px;
+}
+
+#anime {
+  display: flex;
+  align-items: center;
+}
+
+#filme {
+  display: flex;
+  align-items: center;
+}
+
+#serie {
+  display: flex;
+  align-items: center;
+}
+
+img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 225px;
+  width: 100px;
+}
+
+.navbar-netflix {
+  background-color: #000000;
+}
+
+.navbar-netflix .navbar-brand {
+  color: #e50914;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: ease-in-out 0.5s;
+}
+
+.navbar-netflix .nav-link {
+  color: #ffffff !important;
+  font-weight: 500;
+  transition: ease-in-out 0.5s;
+}
+
+.navbar-netflix .nav-link:hover {
+  color: #b3b3b3 !important;
+  transform: scale(1.2);
+}
+
+.navbar-netflix .navbar-brand:hover {
+  transform: scale(1.2);
+  color: #e50914;
+}
+
+.capa {
+  transition: ease-in-out 0.4s;
+}
+
+.capa:hover {
+  transform: scale(1.2);
+}
+
+#anime,
+#filme,
+#serie {
+  margin-top: 30px;
+}
+
+.capa {
+  width: 150px;
+  margin: 15px 40px;
+  border-radius: 5px;
+}

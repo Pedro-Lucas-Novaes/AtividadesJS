@@ -1,0 +1,27 @@
+<%- include ('partials/header.ejs') %> <%- include ('partials/navbar.ejs') %>
+
+<h1>Bem-vindo a página filmes!</h1>
+<hr />
+<h2>Lista de animes:</h2>
+
+<% filmes.forEach(filme => { %>
+<ul>
+  <h4><li><%= filme.nome %></li></h4>
+  <br />
+  <img class="capa" src="<%= filme.img %>" alt="<%= filme.nome %>" />
+  <td class="text-center" style="max-width: 30px;">
+    <a href="/">
+    <button class="btn btn-success">Comprar</button>
+     </a>
+  </td>
+  <br />
+  <h4>
+    <li>
+      <%= filme.preco.toLocaleString("pt-br", {style: "currency", currency:
+      "BRL"}) %>
+      <hr />
+    </li>
+  </h4>
+  <br />
+</ul>
+<% }) %> <%- include ('partials/footer.ejs') %>
