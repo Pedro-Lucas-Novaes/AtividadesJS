@@ -4,6 +4,21 @@
 <hr />
 <h2>Lista de favoritos:</h2>
 
+
+<div class="container">
+      <h1>Cadastrar novo Filme:</h1>
+      <form action="/favoritos/new" method="POST">
+        <label>Título</label>
+        <input type="text" name="titulo" style="color: black;"/>
+        <label>Gênero</label>
+        <input type="text" name="genero" style="color: black;"/>
+        <label>Preço</label>
+        <input type="text" name="preco" style="color: black;"/>
+        <input type="submit" value="Cadastrar" class="btn btn-danger btn-sm">
+      </form>
+    </div>
+
+
 <table>
       <thead>
         <th style="width: 150px; text-align: left">Título</th>

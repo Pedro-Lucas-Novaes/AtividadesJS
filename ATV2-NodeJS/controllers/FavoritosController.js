@@ -13,4 +13,36 @@ router.get("/favoritos", (req, res) => {
   });
 });
 
+router.post("/favoritos/new", (req, res) => {
+  const titulo = req.body.titulo;
+  const genero = req.body.genero;
+  const preco = req.body.preco;
+  Favorito.create({
+    titulo: titulo,
+    genero: genero,
+    preco: preco,
+  })
+    .then(() => {
+      res.redirect("/favoritos");
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+});
+
+router.get("/favoritos/delete/:id", (req, res) => {
+  const id = req.params.id;
+  Favorito.destroy({
+    where: {
+      id: id,
+    },
+  })
+    .then(() => {
+      res.redirect("/favoritos");
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+});
+
 export default router;
